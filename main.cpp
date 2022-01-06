@@ -116,6 +116,18 @@ int main(){
     
 //IS power of a number(first place is for the number whom you want to check of and second is the number whom you are checking eg. Powif(2,64))
 //Powif(number,number2);
+ 
+ //multiply
+//mulp(number,number2);
+
+//divide
+//divn(number,number2);
+
+//add
+//addn(number,number2);
+
+// substract
+//subn(number,number2);
    return 0;
 
 }
