@@ -569,3 +569,29 @@ int palermo(int a ,int b){
    return 0;
 }
 
+int Powif(int m,int n) {
+
+    int num = n;
+    int d = m;
+    int tempNum,flag;
+
+
+    tempNum=num;
+    flag=0;
+    /*check power of two*/
+    while(tempNum!=1)
+    {
+        if(tempNum%m!=0){
+            flag=1;
+            break;
+        }
+        tempNum=tempNum/m;
+    }
+
+    if(flag==0)
+        printf("%d is a number that is the power of %d.\n",num,d);
+    else
+        printf("%d is not the power of %d.\n",num,d);
+
+    return 0;
+}
