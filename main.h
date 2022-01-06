@@ -595,3 +595,55 @@ int Powif(int m,int n) {
 
     return 0;
 }
+
+int mulp(int n,int b){
+  int x = n, y = b;
+   char *p;
+
+
+   p = (char *)x;
+
+   while(--y)
+      p = &p[x];
+
+   printf("\nProuduct = %d\n", p);
+   free(p);
+   return 0;
+}
+
+int divn(int x,int n){
+  int num1 = x,num2 = n,result=0;
+
+     while(num1>=num2) {
+            num1=num1-num2;
+     result++;
+     }
+     int rem = num1-(num1/num2)*num2;
+     printf("Answer is: %d \n",result);
+     printf("Remainder is: %d \n",rem);
+     return 0;
+}
+
+int addp(int x,int y){
+  return printf("%*c%*c", x, ' ', y, ' ');
+}
+
+int addn(int x,int y){
+  int r = x,b = y;
+  printf("Sum = %d", addp(r, b));
+    return 0;
+}
+
+
+int subtractp(int x, int y)
+{
+    if (y == 0)
+        return x;
+    return subtractp(x ^ y, (~x & y) << 1);
+}
+
+int subn(int x, int y){
+  int a = x, b = y;
+    printf("x - y is %d", subtractp(a, b));
+    return 0;
+}
