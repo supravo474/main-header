@@ -4,3 +4,4 @@ version 1.0 stable release,
 version 1.1 stable release 1st Jan(Added Powif function),
 version 1.2 stable release 6th Jan(Added cool ways to DMAS),
 version 2.0 stable release 8th Jan(Just Better).
+
