@@ -1,13 +1,17 @@
-//main.h header file made for number problems in c/c++ by Supravo
+//main.h header file made for number problems in c/c++ by Suprayvo
 //For any enquiry or issue feel free to contact us  @supravo.saha.09@gmail.com
+//Make Changes as you wish :)
+//This code has some example output if you want you can format that
 #include<stdio.h>
-
+#include<stdlib.h>
+#define ll long long
+float PI = 3.1415926535898;
 int checkPalindrome(int number)
 {
   int temp, remainder, rev=0;
   temp = number;
 
-  while( number!=0 )  
+  while( number!=0 )
   {
      remainder = number % 10;
      rev = rev*10 + remainder;
@@ -16,23 +20,23 @@ int checkPalindrome(int number)
 
   if ( rev == temp ){
       printf("%d is a Palindrome Number\n",temp);
-      
-  } 
+
+  }
   else{
       printf("%d is not a Palindrome Number\n",temp);
-      
-  } 
+
+  }
 
   return 0;
 }
 int checkPrime(int n){
     int c;
     int d = n;
-    for ( c = 2 ; c <= n - 1 ; c++ )  
-    { 
+    for ( c = 2 ; c <= n - 1 ; c++ )
+    {
         if ( n%c == 0 ){
             printf("%d is not a prime number\n", d);
-            
+
             return 0;
         }
         else{
@@ -40,10 +44,10 @@ int checkPrime(int n){
             return 1;
         }
    }
-   
+
      return 0;
 	}
-	
+
 
 
 int isEven(int n){
@@ -57,7 +61,7 @@ int isEven(int n){
         return 0;
 
     }
-         
+
 }
 
 int factif(int n)
@@ -70,7 +74,7 @@ int factif(int n)
     }
     printf("Factorial of %d is %d\n",temp,f);
     return f;
-    
+
 }
 int fibonacciSeries(int n)
 {
@@ -109,15 +113,15 @@ int countDigit(long long n)
     return count;
 }
 
-int isArmstrong(int number) 
+int isArmstrong(int number)
 {
 
-  
+
   int lastDigit = 0;
   int power = 0;
   int sum = 0;
 
-  
+
   int n = number;
 
   while(n!=0) {
@@ -231,7 +235,7 @@ int neon(int n ){
     int sqr, rem, sum=0;
 
 
-    sqr = n*n; 
+    sqr = n*n;
 
     while(sqr!=0)
     {
@@ -306,21 +310,21 @@ int powerfo(int base,int exp){
 
 int squaro(float n){
 	double start,end,mid;
-	
-	
+
+
 	start = 0, end = n;
-	
+
 	while((end - start)>=0.000001){
-		
+
 		mid = (start + end)/2;
-		
+
 		if(mid*mid < n)
 			start = mid;
 		if(mid*mid >= n)
 			end = mid;
-		
+
 	}
-	
+
 	printf("Square Root of %d is %f \n",n,mid);
     return 0;
 }
@@ -332,38 +336,38 @@ double diff(double n,double mid)
     else
         return ((mid*mid*mid) - n);
 }
- 
+
 // Returns cube root of a no n
 double cubicRoot(double n)
 {
     // Set start and end for binary search
     double start = 0, end = n;
- 
+
     // Set precision
     double e = 0.0000001;
- 
+
     while (true)
     {
         double mid = (start + end)/2;
         double error = diff(n, mid);
- 
+
         // If error is less than e then mid is
         // our answer so return mid
         if (error <= e)
             return mid;
- 
+
         // If mid*mid*mid is greater than n set
         // end = mid
         if ((mid*mid*mid) > n)
             end = mid;
- 
+
         // If mid*mid*mid is less than n set
         // start = mid
         else
             start = mid;
     }
 }
- 
+
 
 int cubor(double n)
 {
@@ -381,7 +385,7 @@ int sumodd(int n,int d){
     {
         start++;
     }
-    
+
     /* Iterate from start to end and find sum */
     for(i=start; i<=end; i+=2)
     {
@@ -429,7 +433,7 @@ int sumeven(int start, int end){
     return 0;
 }
 
-int sumcube(int number,int number2){ 
+int sumcube(int number,int number2){
     int n = number2;
     int f = number;
     int sum = 0;
@@ -465,7 +469,7 @@ int primeo(int num,int num4){
 int armo(int a,int b){
     int low = a, high = b, number, originalNumber, rem, count = 0;
     double result = 0.0;
- 
+
 
   // swap numbers if high < low
   if (high < low) {
@@ -473,7 +477,7 @@ int armo(int a,int b){
     low = high - low;
     high -= low;
   }
-   
+
   // iterate number from (low + 1) to (high - 1)
   // In each iteration, check if number is Armstrong
   for (number = low + 1; number < high; ++number) {
@@ -511,7 +515,7 @@ int armo(int a,int b){
 int permi(int a,int b){
     int n,i,sum;
     int mn = a,mx = b;
-  
+
   printf("The Perfect numbers within the given range : ");
   for(n=mn;n<=mx;n++){
     i=1;
@@ -568,7 +572,6 @@ int palermo(int a ,int b){
    }
    return 0;
 }
-
 int Powif(int m,int n) {
 
     int num = n;
@@ -595,7 +598,6 @@ int Powif(int m,int n) {
 
     return 0;
 }
-
 int mulp(int n,int b){
   int x = n, y = b;
    char *p;
@@ -646,4 +648,305 @@ int subn(int x, int y){
   int a = x, b = y;
     printf("x - y is %d", subtractp(a, b));
     return 0;
+}
+
+int areaTri(float n, float x){
+  float b ,h, area;
+  b= n;
+  h= x;
+  area = (b*h) / 2 ;
+
+  printf("\n Area of Triangle is: %f",area);
+  return (0);
+}
+
+int areaCirc(float n){
+  float radius = n, area;
+
+   area = PI * radius * radius;
+   printf("\nArea of Circle : %f", area);
+
+
+   return (0);
+}
+
+int areaTrap(float n, float x, float y){
+  float a = n, b = x, h = y;
+    float area;
+
+    area = 0.5 * (a + b) * h ;
+    printf("Area of the trapezium is: %.3f", area);
+    return 0;
+}
+
+int areaRom(float a, float b){
+  float diagonal1 = a, diagonal2 = b;
+    float area;
+
+    area = 0.5 * diagonal1 * diagonal2;
+    printf("Area of rhombus is: %.3f \n", area);
+    return 0;
+}
+
+int areaPar(float n,float d){
+  float b = n,h = d,area;
+
+  area = b*d;
+  printf("Area of Paralleogram is: %0.2f",area);
+}
+double areaCun(double a){
+   return (6 * a * a);
+}
+int areaCube(double a){
+  double m = areaCun(a);
+  printf("Total Surface Area: %f\n",m);
+  return 0;
+}
+
+int volCube(double a){
+  double b = a,re;
+  re = a * a * a;
+  printf("Volume: %f\n",re);
+}
+int areaCy(float a,float b){
+  float radius = a, height = b;
+    float surface_area;
+
+    surface_area = 2 * PI * radius * (radius + height);
+    printf("Surface area of cylinder is: %.3f", surface_area);
+
+    return 0;
+
+}
+
+int volCy(float x, float y){
+  float radius = x, height = y;
+    float volume;
+
+    volume = PI * radius * radius * height;
+    printf("\n Volume of cylinder is : %.3f", volume);
+    return 0;
+}
+
+
+int cubeoidArea(float a,float b,float c){
+  float width = a, length = b, height = c;
+    float surfacearea;
+
+    surfacearea = 2 *(width * length + length * height +
+    height * width);
+
+    printf("Surface area is: %.3f", surfacearea);
+
+    return 0;
+}
+
+int cubeoidVol(float a,float b, float c){
+  float width = a, length = b, height = c;
+   float volume;
+
+   volume = width * length * height;
+
+   printf("\n Volume  is : %.3f", volume);
+   return 0;
+}
+
+int coneVol(float w, float h){
+  float radius = w, height = h;
+    float  volume;
+
+    volume = (1.0/3) * PI* radius * radius * height;
+
+    printf("\n Volume of cone is : %.3f", volume);
+    return 0;
+}
+
+int sphArea(float x){
+  float radius = x;
+    float surface_area;
+
+    surface_area =  4 * PI * radius * radius;
+    printf("Surface area of sphere is: %.3f", surface_area);
+    return 0;
+}
+
+
+int sphVol(float x){
+  float radius = x;
+    float volume;
+
+    volume = (4.0/3) * PI * radius * radius * radius;
+
+    printf("\n Volume of sphere is : %.3f", volume);
+    return 0;
+}
+
+float surface_areay(float r, float s)
+{
+    return PI * r * s + PI * r * r;
+}
+
+
+int coneArea(float x,float y)
+{
+    float radius = x;
+    float slant_height = y;
+    float a;
+    float vol, sur_area;
+
+    a =  surface_areay(radius, slant_height);
+    printf( "Surface Area Of Cone : %f",a);
+    return 0;
+}
+
+int perRec(float x, float y){
+  float b = x,h = y,result;
+
+  result = 2*(b+h);
+  printf("Perimeter is : %f",result);
+}
+
+int perSq(float x){
+  float side = x;
+  float result;
+  result = side*side;
+
+  printf("Perimeter is : %f",result);
+}
+
+int perTri(float x, float y,float z){
+  float a = x,b = y,c = z;
+  float result;
+
+  result = a+b+c;
+  printf("Perimeter is : %f",result);
+}
+
+int perCir(float rad){
+  float radius = rad;
+  float result = (2*PI)*radius;
+
+  printf("Perimeter is : %f",result);
+}
+
+int perTrap(float a,float b,float c,float d){
+  float x = a,y=b,z=c,w=d;
+  float result;
+
+  result = x+y+z+d;
+
+  printf("Perimeter is : %f",result);
+}
+
+int perPar(float x, float y){
+  float a =x,b=y;
+  float result;
+
+  result = 2*(a+b);
+  printf("Perimeter is : %f",result);
+}
+
+int perRom(float a){
+  float side = a,result;
+
+  result = side*side;
+  printf("Perimeter is : %f",result);
+}
+
+int perKit(float x, float y){
+  float b = x,h = y,result;
+
+  result = 2*(b+h);
+  printf("Perimeter is : %f",result);
+}
+
+int perPoly(float a,float b){
+  float side = a,lenght = b,result;
+
+  result = side*lenght;
+  printf("Perimeter is : %f",result);
+
+}
+
+int areaKit(float a,float b){
+  float m = a,n = b;
+  float result = (m * n) / 2;
+
+  printf("Area is : %f",result);
+}
+
+int areaRec(float a,float b){
+  float m = a,n = b,result;
+
+  result = m*n;
+
+  printf("Area is : %f",result);
+}
+
+int perAn(float rado,float radi){
+  float ri = rado,r = radi,result;
+
+  if(r>ri){
+    printf("r cant be > than R \n");
+  }
+  else{
+    result = (2*PI)*(r + ri);
+    printf("Perimeter is : %f",result);
+  }
+    return 0;
+}
+
+int areaAn(float rado,float radi){
+  float ri = rado,r = radi,result;
+  float ris = ri*ri;
+  float rs = r*r;
+
+  if(r>ri){
+    printf("r cant be > than R \n");
+  }
+  else{
+    result = PI*(ris-rs);
+    printf("Area is : %f",result);
+  }
+    return 0;
+
+}
+int compoundInt(double r, double r1, double r2){
+  double p = r;
+  // i is interest rate
+  double i =r1;
+  // n is number of years invested
+  float n = r2;
+  // a is final amount
+  double a;
+
+if(i >=1 || n >=100){
+  printf("Time or rate cant be more then 100\n");
+
+}
+else{
+  a = p;
+  for (int k=0; k<n; ++k) {
+    a *= 1+i;
+  }
+
+  printf("Answer is: %f\n", a);
+}
+
+}
+
+
+int simpleInt(double r, double r1, double r2){
+  double p = r;
+  // i is interest rate
+  double i =r1;
+  // n is number of years invested
+  float n = r2;
+  // a is final amount
+  double a,b;
+
+  a = (p*i*n)/100;
+  b = a+p;
+  printf("Answer is: %f\n", a);
+  printf("Total value is: %f\n", b);
 }
