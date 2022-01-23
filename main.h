@@ -1,11 +1,9 @@
-//main.h header file made for number problems in c/c++ by Suprayvo
+//main.h header file made for number problems in c/c++ by Supravo
 //For any enquiry or issue feel free to contact us  @supravo.saha.09@gmail.com
 //Make Changes as you wish :)
 //This code has some example output if you want you can format that
-#include<stdio.h>
-#include<stdlib.h>
 #define ll long long
-float PI = 3.1415926535898;
+double PI = 3.1415926535898; 
 int checkPalindrome(int number)
 {
   int temp, remainder, rev=0;
@@ -941,12 +939,14 @@ int simpleInt(double r, double r1, double r2){
   // i is interest rate
   double i =r1;
   // n is number of years invested
-  float n = r2;
-  // a is final amount
-  double a,b;
+  float n = r2; 
 
-  a = (p*i*n)/100;
-  b = a+p;
+  double a = (p*i*n)/100;
+  double b = a+p;
   printf("Answer is: %f\n", a);
   printf("Total value is: %f\n", b);
 }
+
+
+//Polygon Area
+//Coming Soon
