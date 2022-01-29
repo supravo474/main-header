@@ -691,6 +691,7 @@ int areaPar(float n,float d){
 
   area = b*d;
   printf("Area of Paralleogram is: %0.2f",area);
+  return 0;
 }
 double areaCun(double a){
    return (6 * a * a);
@@ -705,6 +706,7 @@ int volCube(double a){
   double b = a,re;
   re = a * a * a;
   printf("Volume: %f\n",re);
+  return 0;
 }
 int areaCy(float a,float b){
   float radius = a, height = b;
@@ -802,6 +804,7 @@ int perRec(float x, float y){
 
   result = 2*(b+h);
   printf("Perimeter is : %f",result);
+  return 0;
 }
 
 int perSq(float x){
@@ -810,6 +813,7 @@ int perSq(float x){
   result = side*side;
 
   printf("Perimeter is : %f",result);
+  return 0;
 }
 
 int perTri(float x, float y,float z){
@@ -818,6 +822,7 @@ int perTri(float x, float y,float z){
 
   result = a+b+c;
   printf("Perimeter is : %f",result);
+  return 0;
 }
 
 int perCir(float rad){
@@ -825,6 +830,7 @@ int perCir(float rad){
   float result = (2*PI)*radius;
 
   printf("Perimeter is : %f",result);
+  return 0;
 }
 
 int perTrap(float a,float b,float c,float d){
@@ -834,6 +840,7 @@ int perTrap(float a,float b,float c,float d){
   result = x+y+z+d;
 
   printf("Perimeter is : %f",result);
+  return 0;
 }
 
 int perPar(float x, float y){
@@ -842,6 +849,7 @@ int perPar(float x, float y){
 
   result = 2*(a+b);
   printf("Perimeter is : %f",result);
+  return 0;
 }
 
 int perRom(float a){
@@ -849,6 +857,7 @@ int perRom(float a){
 
   result = side*side;
   printf("Perimeter is : %f",result);
+  return 0;
 }
 
 int perKit(float x, float y){
@@ -856,6 +865,7 @@ int perKit(float x, float y){
 
   result = 2*(b+h);
   printf("Perimeter is : %f",result);
+  return 0;
 }
 
 int perPoly(float a,float b){
@@ -863,6 +873,7 @@ int perPoly(float a,float b){
 
   result = side*lenght;
   printf("Perimeter is : %f",result);
+  return 0;
 
 }
 
@@ -871,6 +882,7 @@ int areaKit(float a,float b){
   float result = (m * n) / 2;
 
   printf("Area is : %f",result);
+  return 0;
 }
 
 int areaRec(float a,float b){
@@ -879,6 +891,7 @@ int areaRec(float a,float b){
   result = m*n;
 
   printf("Area is : %f",result);
+  return 0;
 }
 
 int perAn(float rado,float radi){
@@ -930,7 +943,7 @@ else{
 
   printf("Answer is: %f\n", a);
 }
-
+ return 0;
 }
 
 
@@ -945,6 +958,7 @@ int simpleInt(double r, double r1, double r2){
   double b = a+p;
   printf("Answer is: %f\n", a);
   printf("Total value is: %f\n", b);
+ return 0;
 }
 
 
