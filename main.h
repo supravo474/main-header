@@ -3,6 +3,7 @@
 //Make Changes as you wish :)
 //This code has some example output if you want you can format that
 #define ll long long
+#include<math.h>
 double PI = 3.1415926535898; 
 int checkPalindrome(int number)
 {
@@ -34,7 +35,7 @@ int checkPrime(int n){
     {
         if ( n%c == 0 ){
             printf("%d is not a prime number\n", d);
-
+            
             return 0;
         }
         else{
@@ -963,4 +964,12 @@ int simpleInt(double r, double r1, double r2){
 
 
 //Polygon Area
-//Coming Soon
+int polyArea(double c,double d){
+  double a = c, n = d;
+  double area=(a * a * n) / (4 * tan((180 / n) * 3.14159 / 180))
+//Used std::cout for test purposes
+  std::cout<<"The area of "<<n<<" sided regular polygon of side "<<a<<" is "<<area;
+  return 0;
+
+}
+
