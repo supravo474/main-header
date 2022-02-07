@@ -239,7 +239,7 @@ int main(){
 
 
 //Polygon area(takes values of sides then number of sides)
-polyArea(number,number2);
+//polyArea(number,number2);
 
 
 
