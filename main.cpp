@@ -6,7 +6,7 @@
 using namespace std;
 int main(){
 
-    float number,number2,number3,number4;
+    double number,number2,number3,number4;
 
 
     cout<<"Enter the 1st Number"<<endl;
@@ -15,12 +15,13 @@ int main(){
     cin>>number2;
     cout<<"Enter the 3rd Number"<<endl;
     cin>>number3;
-    /*cout<<"Enter the 4rd Number"<<endl;
-    cin>>number4;*/
+    cout<<"Enter the 4rd Number"<<endl;
+    cin>>number4;
+
 
 
     //PI Value
-   ///cout<<PI<<endl;
+   //cout<<PI<<endl;
 
     //palindrome
     //checkPalindrome(number);
@@ -236,10 +237,13 @@ int main(){
 //Simple Interest takes principle first then rate then time
 //simpleInt(number,number2,number3);
 
-//Polygon Area
-//Coming Soon
- 
 
-   return 0;
+//Polygon area(takes values of sides then number of sides)
+polyArea(number,number2);
+
+
+
+return 0;
 
 }
+
