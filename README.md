@@ -5,4 +5,6 @@ version 1.1 stable release 1st Jan,2022(Added Powif function),
 version 1.2 stable release 6th Jan,2022(Added cool ways to DMAS),
 version 2.0 stable release 8th Jan,2022(Just Better).
 23rd jan,2022 Header File Update(Just made it better).
-29th Jan, 2022 Header File Update(Fixed bugs).
+29th Jan, 2022 Header File Update(Fixed bugs),
+version 3.0 stable release 7th Feb,2022(Added polygon area function and made it better),
+version 4.0 beta release as 3.99 7th Feb,2022(Just Beta Not Final Code).
