@@ -1,5 +1,5 @@
 ///main.h library test in c++
-//This is just an example file the functions can be used in other ways also(just you need to know how to do and what to do and why to do)
+//This is just an example file the functions can be used in other ways also(just you need to know how to do and what to do and why to do).
 #include<iostream>
 #include "main.h"
 
