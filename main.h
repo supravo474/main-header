@@ -966,10 +966,8 @@ int simpleInt(double r, double r1, double r2){
 //Polygon Area
 int polyArea(double c,double d){
   double a = c, n = d;
-  double area=(a * a * n) / (4 * tan((180 / n) * 3.14159 / 180))
-//Used std::cout for test purposes
-  std::cout<<"The area of "<<n<<" sided regular polygon of side "<<a<<" is "<<area;
+  double area=(a * a * n) / (4 * tan((180 / n) * 3.14159 / 180));
+  printf("The area of %f sided regular polygon of side %f  is:  %f",n,a, area);
   return 0;
 
 }
-
