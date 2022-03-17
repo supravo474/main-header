@@ -9,3 +9,4 @@ version 2.0 stable release 8th Jan,2022(Just Better).
 version 3.0 stable release 7th Feb,2022(Added polygon area function and made it better),
 version 4.0 beta release as 3.99 7th Feb,2022(Just Beta Not Final Code),
 version 4.0 stable release 8th Feb,2022(Just Better).
+version 4.99 beta release 18th March,2022(Fixed Bugs).
