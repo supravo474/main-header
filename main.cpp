@@ -220,7 +220,7 @@ int main(){
 //Polygon Perimeter takes number of sides first then takes lenght of the sides
 //perPoly(number,number2);
 
-//Annulus Perimeter takes R first then r(Note:R>r)
+///Annulus Perimeter takes R first then r(Note:R>r)
 //perAn(number,number2);
 
 
