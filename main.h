@@ -1,3 +1,5 @@
+#ifndef MAIN_H
+#define MAIN_H
 //main.h header file made for number problems in c/c++ by Supravo
 //For any enquiry or issue feel free to contact us  @supravo.saha.09@gmail.com
 //Make Changes as you wish :)
@@ -971,3 +973,4 @@ int polyArea(double c,double d){
   return 0;
 
 }
+#endif // MAIN_H
