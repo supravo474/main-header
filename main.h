@@ -1,5 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
+//This is a Qt-C++ project but works everywhere
 //main.h header file made for number problems in c/c++ by Supravo
 //For any enquiry or issue feel free to contact us  @supravo.saha.09@gmail.com
 //Make Changes as you wish :)
